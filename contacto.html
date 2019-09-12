@@ -41,6 +41,21 @@
         height: 100vh;
       }
     }
+    
+    .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+
+    .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
 
   </style>
 </head>
@@ -192,7 +207,7 @@
               <div class="col-md-3 text-center">
                   <ul class="list-unstyled mb-0">
                       <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                          <p>San Francisco, CA 94126, USA</p>
+                          <p>Juan B Justo y Santa Fe, Buenos Aires, Argentina</p>
                       </li>
 
                       <li><i class="fas fa-phone mt-4 fa-2x"></i>
@@ -200,13 +215,20 @@
                       </li>
 
                       <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                          <p>contact@mdbootstrap.com</p>
+                          <p>contacto@exportadoragro.com</p>
                       </li>
                   </ul>
               </div>
               <!--Grid column-->
 
           </div>
+
+          <!--Google map-->
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+              <iframe src="https://maps.google.com/maps?q=juan b justo y santa fe&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+          </div>
+          <!--Google Maps-->
 
       </section>
       <!--Section: Contact v.2-->
@@ -217,7 +239,7 @@
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn fixed-bottom">
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
     <!-- Social icons -->
     <div class="pb-4 pt-4">
