@@ -26,6 +26,10 @@
     .md-pills .nav-link.active, .md-pills .show > .nav-link {
       background-color: #b50b0b;
     }
+    .video-fluid {
+      width: 100%;
+      height: auto;
+    }
 
     @media (max-width: 740px) {
 
@@ -821,11 +825,12 @@
       <!-- Second container -->
 
       <!-- Video -->
-      <h1 class="h1 feature-title text-center mb-3 pt-4">Argentina - Uno de los mayores productores de soja</h1>
+      <h1 class="h1 feature-title text-center mb-4 pt-4">Argentina - Uno de los mayores productores de soja</h1>
       <!-- 16:9 aspect ratio -->
-      <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="img/produccion_de_soja.mp4"></iframe>
-      </div>
+      <video class="video-fluid z-depth-1" autoplay loop controls muted>
+        <source src="img/produccion_de_soja.mp4" type="video/mp4" />
+      </video>
+
 
       <hr class="between-sections mt-5">
 
