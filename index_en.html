@@ -53,7 +53,7 @@
         height: 100vh;
       }
     }
-    
+
     @media (min-width: 1200px) {
       .container {
       max-width: 1250px;
@@ -127,7 +127,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" data-offset="120" class="nav-link border border-light rounded waves-effect">
+            <a href="#contacto" data-offset="120" class="nav-link border border-light rounded waves-effect">
               <i class="far fa-envelope"></i>Contact
             </a>
           </li>
@@ -998,7 +998,7 @@
 
     <div class="container">
 
-      <!-- Section: Contact v.2 -->
+      <!-- Contacto -->
       <section id="contacto" class="section pb-3 wow fadeIn" data-wow-delay="0.3s">
 
           <!-- Section heading -->
@@ -1010,7 +1010,10 @@
 
               <!-- Grid column -->
               <div class="col-md-8 col-xl-9">
-                  <form>
+                 <!-- forspree.io TODO: generar para izsa y copiar a otros contact -->
+                 <form
+                 action="https://formspree.io/moqqleoq"
+                 method="POST">
 
                       <!-- Grid row -->
                       <div class="row">
@@ -1018,7 +1021,7 @@
                           <!-- Grid column -->
                           <div class="col-md-6">
                               <div class="md-form">
-                                      <input type="text" id="contact-name" class="form-control">
+                                      <input type="text" id="contact-name" class="form-control" name="nombre">
                                       <label for="contact-name" class="">Name</label>
                               </div>
                           </div>
@@ -1027,7 +1030,7 @@
                           <!-- Grid column -->
                           <div class="col-md-6">
                               <div class="md-form">
-                                      <input type="text" id="contact-email" class="form-control">
+                                      <input type="text" id="contact-email" class="form-control" name="_replyto">
                                       <label for="contact-email" class="">Email</label>
                               </div>
                           </div>
@@ -1040,13 +1043,13 @@
                       <div class="row">
                         <div class="col-md-6">
                           <div class="md-form">
-                            <input type="text" id="pais" class="form-control">
+                            <input type="text" id="pais" class="form-control" name="pais">
                             <label for="contact-country">Country</label>
                           </div>
                         </div>
                         <div class="col-md-6">
                             <div class="md-form">
-                              <input type="text" id="empresa" class="form-control">
+                              <input type="text" id="empresa" class="form-control" name="empresa">
                               <label for="contact-company">Company</label>
                             </div>
                           </div>
@@ -1057,13 +1060,13 @@
                       <div class="row">
                           <div class="col-md-6">
                             <div class="md-form">
-                              <input type="text" id="pais" class="form-control">
+                              <input type="text" id="pais" class="form-control" name="skype">
                               <label for="contact-skype">Skype</label>
                             </div>
                           </div>
                           <div class="col-md-6">
                               <div class="md-form">
-                                <input type="text" id="empresa" class="form-control">
+                                <input type="text" id="empresa" class="form-control" name="whatsapp">
                                 <label for="contact-whatsapp">WhatsApp</label>
                               </div>
                           </div>
@@ -1074,7 +1077,7 @@
                       <div class="row">
                           <div class="col-md-12">
                               <div class="md-form">
-                                  <input type="text" id="contact-Subject" class="form-control">
+                                  <input type="text" id="contact-Subject" class="form-control" name="asunto">
                                   <label for="contact-Subject" class="">Subject</label>
                               </div>
                           </div>
@@ -1088,7 +1091,7 @@
                           <div class="col-md-12">
 
                               <div class="md-form">
-                                  <textarea type="text" id="contact-message" class="md-textarea form-control" rows="3"></textarea>
+                                  <textarea type="text" id="contact-message" class="md-textarea form-control" rows="3" name="mensaje"></textarea>
                                   <label for="contact-message">Message</label>
                               </div>
 
@@ -1096,11 +1099,11 @@
                       </div>
                       <!-- Grid row -->
 
-                  </form>
-
-                  <div class="text-center text-md-left mb-4">
-                      <a class="btn btn-danger">Send  </a>
-                  </div>
+                      
+                      <div class="text-center text-md-left mb-4">
+                        <button class="btn btn-danger" type="submit">Send</button>
+                      </div>
+                    </form>
               </div>
               <!-- Grid column -->
 
@@ -1117,7 +1120,7 @@
           </div>
 
       </section>
-      <!-- Section: Contact v.2 -->
+      <!-- Contacto -->
     
 
     </div>
