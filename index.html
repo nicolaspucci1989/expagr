@@ -356,479 +356,288 @@
       </div>
       <!-- /.Streak Section -->
       
-      <!-- PRODUCTOS -->
-      <div class="container">
-        <section class="team-section text-center my-5" id="productos">
-          <h3 class="h3 text-center mb-3 mt-3">Productos</h3>
-          <div class="row mt-5 pt-5">
+      <div id="app">
+        <!-- PRODUCTOS -->
+        <div class="container">
+          <section class="team-section text-center my-5" id="productos">
+            <h3 class="h3 text-center mb-3 mt-3">Productos</h3>
+            <div class="row mt-5 pt-5">
 
-            <!-- CARNES -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
+              <!-- PRODUCTOS -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-12 mb-5" v-for="producto in productos">
 
-              <!-- Card -->
-              <div class="card testimonial-card">
+                <!-- Card -->
+                <div class="card testimonial-card">
 
-                <!-- Background color -->
-                <div class="card-up red"></div>
+                  <!-- Background color -->
+                  <div class="card-up" :class="producto.color"></div>
 
-                <!-- Avatar -->
-                <div class="avatar mx-auto white">
-                  <img src="img/productos/proteina-animal.jpg"
-                    class="rounded-circle img-responsive">
+                  <!-- Avatar -->
+                  <div class="avatar mx-auto white">
+                    <img :src="producto.imagen" class="rounded-circle img-responsive">
+                  </div>
+
+                  <div class="card-body">
+                    <!-- Name -->
+                    <h4 class="mt-1">
+                      <strong>{{producto.name}}</strong>
+                    </h4>
+
+                    <hr>
+                    
+                    <h3>
+                      <span class="badge badge-light my-2 mx-2" v-for="subProducto in producto.subProductos">{{subProducto}}</span>
+                    </h3>
+                  </div>
+
                 </div>
+                <!-- Card -->
 
-                <div class="card-body">
-                  <!-- Name -->
-                  <h4 class="mt-1">
-                    <strong>Proteína Animal</strong>
-                  </h4>
+              </div>
+              <!-- Grid column -->
 
-                  <hr>
+              <!-- NUECES  COMESTIBLES -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-12 mb-5">
+
+                  <!-- Card -->
+                  <div class="card testimonial-card">
+    
+                    <!-- Background color -->
+                    <div class="card-up red">
+                    </div>
+    
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white">
+                      <img src="img/productos/nueces.jpg"
+                        class="rounded-circle img-responsive">
+                    </div>
+    
+                    <div class="card-body">
+                      <!-- Name -->
+                      <h4 class="mt-1">
+                        <strong>Nueces Comestibles</strong>
+                      </h4>
+                      <hr>
+                      <!-- Quotation -->
+                      <h3>
+                        <li class="badge badge-light mx-1 my-2">Cacahuetes</li>
+                        <li class="badge badge-light mx-1 my-2">Pistachos</li>
+                        <li class="badge badge-light mx-1 my-2">Nueces</li>
+                        <li class="badge badge-light mx-1 my-2">Almendras</li>
+                        <li class="badge badge-light mx-1 my-2">Cajú</li>
+                        <li class="badge badge-light mx-1 my-2">Avellanas</li>
+                      </h3>
+                    </div>
+    
+                  </div>
+                  <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+
+              <!-- LEGUMBRES -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-12 mb-5">
+
+                  <!-- Card -->
+                  <div class="card testimonial-card">
+    
+                    <!-- Background color -->
+                    <div class="card-up amber lighten-1">
+                    </div>
+    
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white">
+                      <img src="img/productos/verduras.jpg"
+                        class="rounded-circle img-responsive">
+                    </div>
+    
+                    <div class="card-body">
+                      <!-- Name -->
+                      <h4 class="mt-1">
+                        <strong>Legumbres</strong>
+                      </h4>
+                      <hr>
+                      <!-- Quotation -->
+                      <h3>
+                        <span class="badge badge-light mx-1 my-2">Lentejas</span>
+                        <span class="badge badge-light mx-1 my-2">Guisantes</span>
+                        <span class="badge badge-light mx-1 my-2">Garbanzos</span>
+                        <span class="badge badge-light mx-1 my-2">Legumbres</span>
+                      </h3>
+                    </div>
+    
+                  </div>
+                  <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+
+              <!-- JUGO DE FRUTAS -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-12 mb-5">
+
+                  <!-- Card -->
+                  <div class="card testimonial-card">
+    
+                    <!-- Background color -->
+                    <div class="card-up light-green darken-2">
+                    </div>
+    
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white">
+                      <img src="img/productos/jugo-frutas.jpg"
+                        class="rounded-circle img-responsive">
+                    </div>
+    
+                    <div class="card-body">
+                      <!-- Name -->
+                      <h4 class="mt-1">
+                        <strong>Jugo de Frutas</strong>
+                      </h4>
+                      <hr>
+                      <!-- Quotation -->
+                      <h3>
+                        <span class="badge badge-light mx-1 my-2">Naranja</span>
+                        <span class="badge badge-light mx-1 my-2">Manzana Verde</span>
+                        <span class="badge badge-light mx-1 my-2">Manzana Roja</span>
+                        <span class="badge badge-light mx-1 my-2">Pera</span>
+                        <span class="badge badge-light mx-1 my-2">Limón</span>
+                      </h3>
+                    </div>
+    
+                  </div>
+                  <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+
+              <!-- FRUTOS SECOS -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-12 mb-5">
+
+                  <!-- Card -->
+                  <div class="card testimonial-card">
+    
+                    <!-- Background color -->
+                    <div class="card-up light-green lighten-1">
+                    </div>
+    
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white">
+                      <img src="img/productos/frutos-secos.jpg"
+                        class="rounded-circle img-responsive">
+                    </div>
+    
+                    <div class="card-body">
+                      <!-- Name -->
+                      <h4 class="mt-1">
+                        <strong>Frutos Secos</strong>
+                      </h4>
+                      <hr>
+                      <!-- Quotation -->
+                      <h3>
+                        <span class="badge badge-light mx-1 my-2">Pasas de Uva</span>
+                        <span class="badge badge-light mx-1 my-2">Pasas de Ciruela</span>
+                        <span class="badge badge-light mx-1 my-2">Albaricoque</span>
+                        <span class="badge badge-light mx-1 my-2">Piña</span>
+                      </h3>
+                    </div>
+    
+                  </div>
+                  <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+              
+              <!-- ENLATADOS -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-12 mb-5">
+
+                  <!-- Card -->
+                  <div class="card testimonial-card">
+    
+                    <!-- Background color -->
+                    <div class="card-up cyan lighten-2">
+                    </div>
+    
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white">
+                      <img src="img/productos/lata-atun.jpg"
+                        class="rounded-circle img-responsive">
+                    </div>
+    
+                    <div class="card-body">
+                      <!-- Name -->
+                      <h4 class="mt-1">
+                        <strong>Productos Enlatados</strong>
+                      </h4>
+                      <hr>
+                      <!-- Quotation -->
+                      <h3>
+                        <span class="badge badge-light mx-1 my-2">Duraznos</span>
+                        <span class="badge badge-light mx-1 my-2">Piña</span>
+                        <span class="badge badge-light mx-1 my-2">Olivas</span>
+                        <span class="badge badge-light mx-1 my-2">Atún</span>
+                        <span class="badge badge-light mx-1 my-2">Sardinas</span>
+                        <span class="badge badge-light mx-1 my-2">Caballa</span>
+                      </h3>
+                    </div>
+    
+                  </div>
+                  <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+
+              <!-- OTROS -->
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-12 mb-5">
+
+                  <!-- Card -->
+                  <div class="card testimonial-card">
+    
+                    <!-- Background color -->
+                    <div class="card-up deep-purple lighten-1">
+                    </div>
+    
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white">
+                      <img src="img/productos/cafe.jpg"
+                        class="rounded-circle img-responsive">
+                    </div>
+    
+                    <div class="card-body">
+                      <!-- Name -->
+                      <h4 class="mt-1">
+                        <strong>Otros Productos</strong>
+                      </h4>
+                      <hr>
+                      <!-- Quotation -->
+                      <h3>
+                        <span class="badge badge-light mx-1 my-2">Azúcar</span>
+                        <span class="badge badge-light mx-1 my-2">Polvo de Cacao</span>
+                        <span class="badge badge-light mx-1 my-2">Café</span>
+                        <span class="badge badge-light mx-1 my-2">Miel</span>
+                        <span class="badge badge-light mx-1 my-2">Pasta Seca</span>
+                      </h3>
+                    </div>
+    
+                  </div>
+                  <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
                   
-                  <h3>
-                    <span class="badge badge-light my-2 mx-1">Carne de Vaca</span>
-                    <span class="badge badge-light my-2 mx-1">Cerdo</span>
-                    <span class="badge badge-light my-2 mx-1">Pollo</span>
-                    <span class="badge badge-light my-2 mx-1">Pescado</span>
-                  </h3>
-                </div>
-
-              </div>
-              <!-- Card -->
+                  
 
             </div>
-            <!-- Grid column -->
-
-            <!-- GRANOS -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-              <!-- Card -->
-              <div class="card testimonial-card">
-
-                <!-- Background color -->
-                <div class="card-up amber lighten-1">
-                </div>
-
-                <!-- Avatar -->
-                <div class="avatar mx-auto white">
-                  <img src="img/productos/granos.jpg"
-                    class="rounded-circle img-responsive">
-                </div>
-
-                <div class="card-body">
-                  <!-- Name -->
-                 <!-- Name -->
-                  <h4 class="mt-1">
-                    <strong>Granos</strong>
-                  </h4> 
-
-                  <hr>
-                  <!-- Quotation -->
-                  <h3>
-                    <span class="badge badge-light my-2 mx-1">Haba de Soja</span>
-                    <span class="badge badge-light my-2 mx-1">Maíz</span>
-                    <span class="badge badge-light my-2 mx-1">Trigo</span>
-                    <span class="badge badge-light my-2 mx-1">Sorgo</span>
-                    <span class="badge badge-light my-2 mx-1">Palomitas de Maíz</span>
-                  </h3>
-                </div>
-
-              </div>
-              <!-- Card -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- HARINAS -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-              <!-- Card -->
-              <div class="card testimonial-card">
-
-                <!-- Background color -->
-                <div class="card-up light-green darken-2">
-                </div>
-
-                <!-- Avatar -->
-                <div class="avatar mx-auto white">
-                  <img src="img/productos/harina.jpg"
-                    class="rounded-circle img-responsive">
-                </div>
-
-                <div class="card-body">
-                  <!-- Name -->
-                  <h4 class="mt-1">
-                    <strong>Harinas</strong>
-                  </h4>
-                  <hr>
-                  <!-- Quotation -->
-                  <h3>
-                    <span class="badge badge-light mx-1 my-2">Soja</span>
-                    <span class="badge badge-light mx-1 my-2">Trigo</span>
-                    <span class="badge badge-light mx-1 my-2">Maíz</span>
-                  </h3>
-                </div>
-
-              </div>
-              <!-- Card -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- SEMILLAS Y ACEITES -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-                <!-- Card -->
-                <div class="card testimonial-card">
-
-                  <!-- Background color -->
-                  <div class="card-up light-green lighten-1">
-                  </div>
-
-                  <!-- Avatar -->
-                  <div class="avatar mx-auto white">
-                    <img src="img/productos/semillas-aceites.jpg"
-                      class="rounded-circle img-responsive">
-                  </div>
-
-                  <div class="card-body">
-                    <!-- Name -->
-                    <h4 class="mt-1">
-                      <strong>Semillas y Aceites</strong>
-                    </h4>
-                    <hr>
-                    <!-- Quotation -->
-                    <h3>
-                      <span class="badge badge-light mx-1 my-2">Girasol</span>
-                      <span class="badge badge-light mx-1 my-2">Sésamo</span>
-                      <span class="badge badge-light mx-1 my-2">Linaza</span>
-                    </h3>
-                  </div>
-
-                </div>
-                <!-- Card -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- PRODUCTOS LACTEOS -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-              <!-- Card -->
-              <div class="card testimonial-card">
-
-                <!-- Background color -->
-                <div class="card-up cyan lighten-2">
-                </div>
-
-                <!-- Avatar -->
-                <div class="avatar mx-auto white">
-                  <img src="img/productos/productos-lacteos.jpg"
-                    class="rounded-circle img-responsive">
-                </div>
-
-                <div class="card-body">
-                  <!-- Name -->
-                  <h4 class="mt-1">
-                    <strong>Productos Lácteos</strong>
-                  </h4>
-                  <hr>
-                  <!-- Quotation -->
-                  <h3>
-                    <span class="badge badge-light mx-1 my-2">Quesos</span>
-                    <span class="badge badge-light mx-1 my-2">Manteca</span>
-                  </h3>
-                </div>
-
-              </div>
-              <!-- Card -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- BEBIDAS -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-              <!-- Card -->
-              <div class="card testimonial-card">
-
-                <!-- Background color -->
-                <div class="card-up deep-purple lighten-1">
-                </div>
-
-                <!-- Avatar -->
-                <div class="avatar mx-auto white">
-                  <img src="img/productos/vinos.jpg"
-                    class="rounded-circle img-responsive">
-                </div>
-
-                <div class="card-body">
-                  <!-- Name -->
-                  <h4 class="mt-1">
-                    <strong>Bebidas</strong>
-                  </h4>
-                  <hr>
-                  <!-- Quotation -->
-                  <h3>
-                    <li class="badge badge-light mx-1 my-2">Vino Tinto</li>
-                    <li class="badge badge-light mx-1 my-2">Vino Blanco</li>
-                    <li class="badge badge-light mx-1 my-2">Cerveza</li>
-                    <li class="badge badge-light mx-1 my-2">Agua Mineral</li>
-                  </h3>
-                </div>
-
-              </div>
-              <!-- Card -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- NUECES  COMESTIBLES -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-                <!-- Card -->
-                <div class="card testimonial-card">
-  
-                  <!-- Background color -->
-                  <div class="card-up red">
-                  </div>
-  
-                  <!-- Avatar -->
-                  <div class="avatar mx-auto white">
-                    <img src="img/productos/nueces.jpg"
-                      class="rounded-circle img-responsive">
-                  </div>
-  
-                  <div class="card-body">
-                    <!-- Name -->
-                    <h4 class="mt-1">
-                      <strong>Nueces Comestibles</strong>
-                    </h4>
-                    <hr>
-                    <!-- Quotation -->
-                    <h3>
-                      <li class="badge badge-light mx-1 my-2">Cacahuetes</li>
-                      <li class="badge badge-light mx-1 my-2">Pistachos</li>
-                      <li class="badge badge-light mx-1 my-2">Nueces</li>
-                      <li class="badge badge-light mx-1 my-2">Almendras</li>
-                      <li class="badge badge-light mx-1 my-2">Cajú</li>
-                      <li class="badge badge-light mx-1 my-2">Avellanas</li>
-                    </h3>
-                  </div>
-  
-                </div>
-                <!-- Card -->
-  
-            </div>
-            <!-- Grid column -->
-
-            <!-- LEGUMBRES -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-                <!-- Card -->
-                <div class="card testimonial-card">
-  
-                  <!-- Background color -->
-                  <div class="card-up amber lighten-1">
-                  </div>
-  
-                  <!-- Avatar -->
-                  <div class="avatar mx-auto white">
-                    <img src="img/productos/verduras.jpg"
-                      class="rounded-circle img-responsive">
-                  </div>
-  
-                  <div class="card-body">
-                    <!-- Name -->
-                    <h4 class="mt-1">
-                      <strong>Legumbres</strong>
-                    </h4>
-                    <hr>
-                    <!-- Quotation -->
-                    <h3>
-                      <span class="badge badge-light mx-1 my-2">Lentejas</span>
-                      <span class="badge badge-light mx-1 my-2">Guisantes</span>
-                      <span class="badge badge-light mx-1 my-2">Garbanzos</span>
-                      <span class="badge badge-light mx-1 my-2">Legumbres</span>
-                    </h3>
-                  </div>
-  
-                </div>
-                <!-- Card -->
-  
-            </div>
-            <!-- Grid column -->
-
-            <!-- JUGO DE FRUTAS -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-                <!-- Card -->
-                <div class="card testimonial-card">
-  
-                  <!-- Background color -->
-                  <div class="card-up light-green darken-2">
-                  </div>
-  
-                  <!-- Avatar -->
-                  <div class="avatar mx-auto white">
-                    <img src="img/productos/jugo-frutas.jpg"
-                      class="rounded-circle img-responsive">
-                  </div>
-  
-                  <div class="card-body">
-                    <!-- Name -->
-                    <h4 class="mt-1">
-                      <strong>Jugo de Frutas</strong>
-                    </h4>
-                    <hr>
-                    <!-- Quotation -->
-                    <h3>
-                      <span class="badge badge-light mx-1 my-2">Naranja</span>
-                      <span class="badge badge-light mx-1 my-2">Manzana Verde</span>
-                      <span class="badge badge-light mx-1 my-2">Manzana Roja</span>
-                      <span class="badge badge-light mx-1 my-2">Pera</span>
-                      <span class="badge badge-light mx-1 my-2">Limón</span>
-                    </h3>
-                  </div>
-  
-                </div>
-                <!-- Card -->
-  
-            </div>
-            <!-- Grid column -->
-
-            <!-- FRUTOS SECOS -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-                <!-- Card -->
-                <div class="card testimonial-card">
-  
-                  <!-- Background color -->
-                  <div class="card-up light-green lighten-1">
-                  </div>
-  
-                  <!-- Avatar -->
-                  <div class="avatar mx-auto white">
-                    <img src="img/productos/frutos-secos.jpg"
-                      class="rounded-circle img-responsive">
-                  </div>
-  
-                  <div class="card-body">
-                    <!-- Name -->
-                    <h4 class="mt-1">
-                      <strong>Frutos Secos</strong>
-                    </h4>
-                    <hr>
-                    <!-- Quotation -->
-                    <h3>
-                      <span class="badge badge-light mx-1 my-2">Pasas de Uva</span>
-                      <span class="badge badge-light mx-1 my-2">Pasas de Ciruela</span>
-                      <span class="badge badge-light mx-1 my-2">Albaricoque</span>
-                      <span class="badge badge-light mx-1 my-2">Piña</span>
-                    </h3>
-                  </div>
-  
-                </div>
-                <!-- Card -->
-  
-            </div>
-            <!-- Grid column -->
-            
-            <!-- ENLATADOS -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-                <!-- Card -->
-                <div class="card testimonial-card">
-  
-                  <!-- Background color -->
-                  <div class="card-up cyan lighten-2">
-                  </div>
-  
-                  <!-- Avatar -->
-                  <div class="avatar mx-auto white">
-                    <img src="img/productos/lata-atun.jpg"
-                      class="rounded-circle img-responsive">
-                  </div>
-  
-                  <div class="card-body">
-                    <!-- Name -->
-                    <h4 class="mt-1">
-                      <strong>Productos Enlatados</strong>
-                    </h4>
-                    <hr>
-                    <!-- Quotation -->
-                    <h3>
-                      <span class="badge badge-light mx-1 my-2">Duraznos</span>
-                      <span class="badge badge-light mx-1 my-2">Piña</span>
-                      <span class="badge badge-light mx-1 my-2">Olivas</span>
-                      <span class="badge badge-light mx-1 my-2">Atún</span>
-                      <span class="badge badge-light mx-1 my-2">Sardinas</span>
-                      <span class="badge badge-light mx-1 my-2">Caballa</span>
-                    </h3>
-                  </div>
-  
-                </div>
-                <!-- Card -->
-  
-            </div>
-            <!-- Grid column -->
-
-            <!-- OTROS -->
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-5">
-
-                <!-- Card -->
-                <div class="card testimonial-card">
-  
-                  <!-- Background color -->
-                  <div class="card-up deep-purple lighten-1">
-                  </div>
-  
-                  <!-- Avatar -->
-                  <div class="avatar mx-auto white">
-                    <img src="img/productos/cafe.jpg"
-                      class="rounded-circle img-responsive">
-                  </div>
-  
-                  <div class="card-body">
-                    <!-- Name -->
-                    <h4 class="mt-1">
-                      <strong>Otros Productos</strong>
-                    </h4>
-                    <hr>
-                    <!-- Quotation -->
-                    <h3>
-                      <span class="badge badge-light mx-1 my-2">Azúcar</span>
-                      <span class="badge badge-light mx-1 my-2">Polvo de Cacao</span>
-                      <span class="badge badge-light mx-1 my-2">Café</span>
-                      <span class="badge badge-light mx-1 my-2">Miel</span>
-                      <span class="badge badge-light mx-1 my-2">Pasta Seca</span>
-                    </h3>
-                  </div>
-  
-                </div>
-                <!-- Card -->
-  
-            </div>
-            <!-- Grid column -->
-                
-                
-
-          </div>
-        </section>
+          </section>
+        </div>
+        <!-- PRODUCTOS -->
       </div>
-      <!-- PRODUCTOS -->
 
       <!-- Streak Section -->
       <div class="streak streak-md streak-photo my-5" style="background-image:url('img/streaks/streak-cargero-2.jpg')">
@@ -975,6 +784,7 @@
         </section>
       </div>
       <!-- Second container -->
+
       <!-- Video -->
       <h1 class="h1 feature-title text-center mb-5 pt-4">Argentina - Uno de los mayores productores de soja</h1>
       <!-- 16:9 aspect ratio -->
@@ -1146,6 +956,21 @@
   <script type="text/javascript " src="pro/js/bootstrap.min.js "></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript " src="pro/js/mdb.min.js "></script>
+  <!-- VUEJS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- Productos IZSA -->
+  <script src="/js/productos.js"></script>
+
+  <script>
+    const vm = new Vue({
+      el: '#app',
+      data: function() {
+        return {
+          productos: productos,
+        }
+      }
+    })
+  </script>
   
   <!-- Initializations -->
   <script type="text/javascript">
