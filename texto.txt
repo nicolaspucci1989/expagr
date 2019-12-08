@@ -1,18 +1,9 @@
 TODO
 
 - Corregir los errores ortográficos, hay varios. 
-- Al lado del logo de IZSA debe estar el logo de CCC que te vamos a adjuntar 
-- Queremos eliminar lo que dice: “Produccion argentina” y el video“.
 - Por favor agregar la palabra TRADING alado de QUIENES SOMOS / INVERSIONES ZULUAGA
 - Agregar también alado de la palabra Indonesia - “y otros países asiáticos”
-- Cambiar la frase: Ciudad de Panamá por: Repùblica de Panamá.
-- En la parte de PRODUCTOS, cambiar las palabras: HABA DE SOJA por SOJA, y cambiar PALOMITAS DE MAÍZ por MAÍZ PISINGALLO
-- En la parte de NUESTOS SERVICIOS cambiar la palabra BROKER por TRADER
-- Eliminar la parte de PROCEDIMIENTOS
-- Eliminar la parte de BROKERS 
-- Agregar en Contáctenos: nuestros datos completos
 
-Cambios en versión inglés
 - INVERSIONES ZULUAGA SA (IZSA) It is the leading company, within the holding, dedicated to the trading of agricultural 
   products and by-products.
 - Cow meat NO ----> Beef
