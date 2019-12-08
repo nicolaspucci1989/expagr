@@ -1,55 +1,26 @@
-Nombre de la Empresa: IZSA
+TODO
 
-Misión;
-  Orientar objetivamente a nuestros clientes y proveedores, proponerles mercados adecuados,
-  fortalecer  las relaciones comerciales y empresarias.  Lograr que en conjunto se conviertan un
-  equipo para beneficio mutuo. Fortalecer la mirada a otros horizontes y explorar nuevas oportunidades.
+- Corregir los errores ortográficos, hay varios. 
+- Al lado del logo de IZSA debe estar el logo de CCC que te vamos a adjuntar 
+- Queremos eliminar lo que dice: “Produccion argentina” y el video“.
+- Por favor agregar la palabra TRADING alado de QUIENES SOMOS / INVERSIONES ZULUAGA
+- Agregar también alado de la palabra Indonesia - “y otros países asiáticos”
+- Cambiar la frase: Ciudad de Panamá por: Repùblica de Panamá.
+- En la parte de PRODUCTOS, cambiar las palabras: HABA DE SOJA por SOJA, y cambiar PALOMITAS DE MAÍZ por MAÍZ PISINGALLO
+- En la parte de NUESTOS SERVICIOS cambiar la palabra BROKER por TRADER
+- Eliminar la parte de PROCEDIMIENTOS
+- Eliminar la parte de BROKERS 
+- Agregar en Contáctenos: nuestros datos completos
 
-Visión:
-  Colocar a nuestros clientes y proveedores en los escenarios más favorables,
-  alcanzar el impacto positivo que se merecen. 
-
-Quienes somos:
-  Somos una empresa que cuenta con red de expertos con muchos años de experiencia en la comercialización y marketing
-  de distintos productos y servicios.  Nuestro principal mercado para los productos agro industriales de América Latina
-  es el Continente Asiático, a países como China e Indonesia. IZSA también cuenta con un sector dedicado a promover proyectos
-  de infraestructura, energías renovables etc.
-
-Que Hacemos:
-  Agente de Marketing
-  Comercialización
-  Estudios de mercado
-  Evaluación de inversiones
-
-Productos:
-  Sorgo, soja, maíz, azúcar, partes del pollo, vinos
-  Energías renovables.
-
-
-===== Eng =====
-
-Mission;
-  Objectively orient our clients and suppliers, propose the right markets,
-  strenghten business adn commercial relations. Achive a team union for mutual benefit.
-  Strenghten the look to other horizons and explore new oportunities
-
-Vision:
-  Place our clients and suppliers in the mos favorable scenarios, reach the 
-  positive impact they deserve.
-
-About us:
-  We are a company that has a network of experts with many years of experience in commercializacion and marketing
-  of several products and services. Our main market for Latin American agro-industrial products is the Asian Continent,
-  coutries like China and indonesia. IZSA also has a sector dedicated to promoting infrastructure projects, 
-  renewable energy etc.
-
-What We Do:
-  Marketing Agent
-  Commercialization
-  Market Studies
-  Investment 
-  
-Products:
-  Sorghum, Soy, Corn, Sugar, Chicken Parts, Wines
-  Renewable Energy.
-
+Cambios en versión inglés
+- INVERSIONES ZULUAGA SA (IZSA) It is the leading company, within the holding, dedicated to the trading of agricultural 
+  products and by-products.
+- Cow meat NO ----> Beef
+- Márgenes justificados
+- Feeding the world
+  Falta la "N"
+- Falta acento en:
+  Misión 
+  Contáctenos 
+  Quiénes
+  ¿Quiénes somos?
